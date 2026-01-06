@@ -1,0 +1,18 @@
+margin: area di luar content
+padding: area di dalam content
+colors : warna
+z-index: semakin besar indexnya semakin ditampilkan di urutan aling atas(urutan ditampilkan)
+position: posisi element
+display: bagaimana suatu elemen ditampilkan dan bagaimana elemen tersebut berinteraksi dengan elemen lain di sekitarnya.
+    -block: mengambil satu baris
+    -inline: menyesuaikan isi contentnya(tidak bisa mengatur width dan heightnya)
+    -inline-block: sama seperti inline tapi width sama heightnya bisa diatur
+    -flex: layout yg flexible
+    -grid: layout 2 dimensi(baris dan kolom)
+    -none: element dihilangkan
+TAILWIND:
+    m- :Digunakan untuk margin (mx- margin kiri kanan) (my- margin bawah atas)
+    w- :Width/Lebar
+    h- :Height/Tinggi, min-h-screen: tingginya menyesuaikan layar
+    font- :Digunakan untuk mengganti font(kalau mau tambahin font yg gaada bisa juga)
+kalau mau warnanya gradien caranya cari di tailwindcss web, format: bg-gradient-to-r from-(color)-600 to-(color)-400
