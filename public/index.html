@@ -8,13 +8,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@1,14..32,100..900&display=swap" rel="stylesheet">
     <title>BELAJAR TAILWIND</title>
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config= {
+            darkMode: 'class',
             theme: {
                 extend: {
                     fontFamily: {
-                        inter: ['Inter:ital'],
+                        inter: ['Inter'],
                     },
                     colors: {
                         kopi:'#c0ffee',
@@ -23,13 +23,27 @@
             },
         };
     </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        
+    </style>
 </head>
-<body>
+<body class="bg-white dark:bg-gray-900 text-black dark:text-white">
     <section>
     <h1 class="font-extrabold bg-gradient-to-b from-blue-600 to-blue-200 text-center text-7xl">HALO DUNIA <span class="bg-gradient-to-l from-gray-400 to-green-700 bg-clip-text text-transparent">TAILWINDCSS</span></h1>
     <p class="m-2 bg-gradient-to-t from-red-500 via-orange-350 to-yellow-200">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil maiores fugit provident unde blanditiis, consequatur cupiditate? Quos laboriosam impedit quaerat molestias labore, officia dolorem sint officiis? Minima accusantium distinctio eos! Deserunt earum soluta dolore ab, qui recusandae, nemo praesentium voluptatum ea eum quaerat sequi adipisci odit illum reiciendis at minus.</p>
     <a href="#" class=" bg-blue-700 p-5 text-white m-3 rounded hover:bg-blue-900 inline-block">ini tombol</a>
     </section>
+    <div class="flex justify-center">
+        <span>light</span>
+        <input type="checkbox" id="toggle" class="hidden">
+        <label for="toggle">
+            <div class="w-9 h-5 p-1 flex items-center bg-purple-600 rounded-full cursor-pointer">
+                <div class="w-4 h-4 bg-slate-200 rounded-full toggle-circle transition-transform duration-300"></div>
+            </div>
+        </label>
+        <span>dark</span>
+    </div>
 
     <section class="ml-3">
         <h2 class="mb-4 font-bold text-5xl ">Bagian Typography</h2>
@@ -37,8 +51,29 @@
         <p class="mb-5 font-serif">Lorem ipsum dolor sit, amet consectetur adipisicing <a href="#" class="underline text-blue-800">elit</a>. Quod libero architecto corrupti voluptates autem cum amet ipsum! Consectetur dolores architecto explicabo at asperiores eligendi vitae consequatur aliquid molestiae, amet saepe.</p>
         <quote class="italic font-light">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia animi quod cumque eum deleniti praesentium, perferendis voluptas laborum et excepturi?"</quote>
     </section>
-    <div class="max-w-xl h-96 bg-[#1414] mx-auto mt-11 rounded-l-2xl shadow-2xl border-2 border-red-800 shadow-blue-950 blur hover:blur-none"></div>
+    <div class="max-w-xl h-96 bg-[#1414] mx-auto mt-11 rounded-2xl shadow-2xl border-2 border-red-800 shadow-blue-950 blur hover:blur-none"></div>
         <p class="p-3 mt-4 font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptatibus et vitae, libero deserunt optio! Fugit quisquam sunt corrupti nemo, quod odit quia maiores? Quia saepe sapiente velit nisi aliquid nemo deserunt consequatur repudiandae obcaecati earum quisquam ea, officia dolorem beatae in? Debitis tempora eligendi velit corporis sapiente eaque possimus iste amet perspiciatis at quos sequi ipsa consequatur unde aspernatur explicabo rerum, repellendus quas quo vel laudantium! Nihil, impedit voluptatem ipsa beatae nulla molestias non soluta tempora at dolorem sit numquam! Ab optio error ea tempora necessitatibus, vero odio praesentium, enim temporibus sit, exercitationem aut quas. Ut minima labore commodi?</p>
-        <div class="mb-95"></div>
-</body>
+    <hr class="my-5">
+    <button class="bg-purple-600 text-white font-semibold py-2 px-5 rounded-full block mx-auto hover:bg-purple-800 active:bg-purple-900 focus:ring focus:ring-blue-950">SAVE</button>
+    <div class="font-serif my-5 max-w-lg border-slate-200 border rounded mx-auto shadow-md hover:bg-purple-500 group selection:bg-blue-900">
+        <h3 class="mb-2 font-semibold text-2xl group-hover:text-white ">My Card</h3>
+        <p class="first-letter:tracking-widest first-letter:text-6xl group-hover:text-white ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, earum? Delectus illum nam neque facilis expedita beatae corrupti molestias ipsa fugiat. Esse porro voluptatum optio delectus commodi maiores quibusdam cumque.</p>
+    </div>
+    <div class="font-serif my-5 max-w-lg border-slate-200 border rounded mx-auto shadow-md selection:bg-blue-900">
+        <form action="">
+            <label for="email" class="block"></label>
+            <span class="block font-semibold mb-2 font-sans after:content-['*'] after:text-red-700 after:ml-0.5 ">Email</span>
+            <input type="email" id="email" placeholder="Masukkan email..." class="peer px-3 py-2 border border-slate-400 w-full rounded focus:outline-none focus:ring-1 focus:ring-green-400 focus:border-green-500 invalid:text-red-600 invalid:focus:ring-red-600 invalid:focus:border-red-600" >
+            <p class="text-sm pl-1 text-red-600 after:content-['*'] invisible peer-invalid:visible font-sans-serif">Email tidak valid</p>
+        </form>
+    </div>
+    <div class="mb-96"></div>
+    <script>
+        const checkbox = document.querySelector('#toggle');
+        const html = document.querySelector('html');
+        checkbox.addEventListener('change', function () {
+            checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark');
+        });
+    </script>
+    </body>
 </html>

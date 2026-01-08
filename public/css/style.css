@@ -595,6 +595,10 @@ video {
   margin-top: 1rem;
 }
 
+.mb-9 {
+  margin-bottom: 2.25rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -614,6 +618,10 @@ video {
 .h-max {
   height: -moz-max-content;
   height: max-content;
+}
+
+.h-9 {
+  height: 2.25rem;
 }
 
 .w-1 {
