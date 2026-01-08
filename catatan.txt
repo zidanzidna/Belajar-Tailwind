@@ -12,7 +12,38 @@ display: bagaimana suatu elemen ditampilkan dan bagaimana elemen tersebut berint
     -none: element dihilangkan
 TAILWIND:
     m- :Digunakan untuk margin (mx- margin kiri kanan) (my- margin bawah atas)
+misal kalau mau memasukkan ukuran custom maka harus memakai [42px]
     w- :Width/Lebar
     h- :Height/Tinggi, min-h-screen: tingginya menyesuaikan layar
     font- :Digunakan untuk mengganti font(kalau mau tambahin font yg gaada bisa juga)
 kalau mau warnanya gradien caranya cari di tailwindcss web, format: bg-gradient-to-r from-(color)-600 to-(color)-400
+kalau mau nambahin image ke dalam border: pake inline style trus backgorund-image: url('masukkin url nya)
+overflow-scroll : digunakan untuk mengscroll ulisan yg kelewat batas pada gambar
+bg-local: digunakan untuk scroll text dan gambarnya
+bg-fixed: gambarnya ngescroll
+- background and border:
+ untuk bentuk gambarnya nya tinggal ketikan bentuknya contoh: rounded-2xl(ukurannya) 
+ bordernya ketik: border-(ukuran) border-(warna)
+- rounding and shadow:
+shadow-(ukurannya hanya sampai 2xl) shadow-(warnanya)
+- effects and filters:
+opacity-(ukurannya): untuk transparan
+mix-blend-(darken,lighten): digunakan untuk ngeblend dengan backgroundnya
+bg-blend-(darken,lighten)
+blur-sm(ukurannya): buat ngeblur konten
+hover:blur-none: jika cursornya ada di konten maka akan menghilangkan blurnya
+bg-contain: buat supaya gambarnya full memenuhi container/konten
+bg-cover: memenuhi sluruh layar
+    Pseudo class and Dark mode
+- hover: untuk ketika cursor ada di element
+- active: untuk button ketika dipencet
+- focus: samping dari button ketika selesai dipencet
+- group: digunakan untuk menyatukan element2nya
+- selection: jika di selection textnya warnanya akan berbeda
+- first-letter:  digunakan untuk mengubah huruf pertama dan didalamnya ada beberapa command(xl,float,my,mx,dll)
+- placeholder: digunakan untuk membuat kotak inputan
+- invalid: jika inputan tidak sesuai
+- peer: sama seperti group namun digunakan jika sepadan
+- invisible: digunakan jika ingin menghilangkan konten
+- dark: mengubah element2nya ketika di dark mode
+jika ingin membuat input, bungkus input dengan form, di labelnya for="(diisi dengan id yang ada di input, harus sama*)"
