@@ -47,3 +47,15 @@ bg-cover: memenuhi sluruh layar
 - invisible: digunakan jika ingin menghilangkan konten
 - dark: mengubah element2nya ketika di dark mode
 jika ingin membuat input, bungkus input dengan form, di labelnya for="(diisi dengan id yang ada di input, harus sama*)"
+- scale : untuk memperbesar/ memperkecil element
+- rotate : untuk memutar element
+- translate : untuk menggeser element
+- skew
+- origin : menentukan sumbu element
+TRANSITION and ANIMATION
+- transition: buat element ada transisinya
+- ease in,ease out: kecepatan transisi
+- duration: kecepatan transisi
+- delay: kecepatan animasi setelah terkena cursor
+- animation: spin,pulse,bounce,ping
+Jika, ingin diatur sesuai yg kamu inginkan maka harus di configurasi terlebih dahulu
