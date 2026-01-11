@@ -59,3 +59,11 @@ TRANSITION and ANIMATION
 - delay: kecepatan animasi setelah terkena cursor
 - animation: spin,pulse,bounce,ping
 Jika, ingin diatur sesuai yg kamu inginkan maka harus di configurasi terlebih dahulu
+LAYOUT
+- container: digunakan untuk membatasi kiri kanan dari elementnya sesuai dengan breakpoint yg digunakan
+- float: digunakan supaya tulisan mengelilingi gambar
+- relative: digunakan untuk memberikan container/pembatas pada absolute
+- absolute: digunakan untuk memindahkan element dengan bebas dalam relative
+- flex: mengatur tata letaknya dengan flexible
+- fixed: digunakan supaya elementnya tetap pada tempatnya dan selalu muncul di layar
+- coloumns: digunakan untuk memberikan kolom pada gambar2 atau element2 
