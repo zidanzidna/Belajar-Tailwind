@@ -67,3 +67,11 @@ LAYOUT
 - flex: mengatur tata letaknya dengan flexible
 - fixed: digunakan supaya elementnya tetap pada tempatnya dan selalu muncul di layar
 - coloumns: digunakan untuk memberikan kolom pada gambar2 atau element2 
+RESPONSIVE DESIGN
+- tracking: buat jarak antar huruf
+- objectcover: buat memotong gambar supaya sesuai dengan ukuran
+BUAT BREAKPOINT ATAU UKURAN DEVICE YG DIGUNAKAN UNTUK MEMBUKA WEB KITA
+- sm: small(640px)
+- md: medium(768px)
+- lg: large(1024px)
+- xl: xtra large(1280px)
