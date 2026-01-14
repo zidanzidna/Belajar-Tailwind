@@ -75,3 +75,15 @@ BUAT BREAKPOINT ATAU UKURAN DEVICE YG DIGUNAKAN UNTUK MEMBUKA WEB KITA
 - md: medium(768px)
 - lg: large(1024px)
 - xl: xtra large(1280px)
+FLEXBOX: DAPAT MENGUBAH LAYOUT DENGAN FLEX/NYAMPING
+- block: buat menampilkan hidden
+- overflow-hiddden: buat menyembunyikan element yg kelebihan
+- justify-evenly: buat jaraknya tetap sama antar gambar
+- gap: jarak antar gambar
+- flex-wrap: supaya pada waktu di flex lebarnya akan sesuai dengan yang kita mau
+GRID
+- grid-cols: memberikan grid kolom
+- aspect: buat ratio dari setiap gridnya
+- col-start-(), row-start-(): digunakan untuk memindah grid keposisi yg diinginkan
+- relative: buat jadi acuan/parent dari absolute
+- absolute: Menempatkan elemen bebas dari flow layout, dihitung dari parent relative terdekat
